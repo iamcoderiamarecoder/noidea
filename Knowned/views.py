@@ -41,7 +41,7 @@ user_id =None
 #            param= {"id":response}
 #            return render(request,"add.html",param)
 #             
-#    return render(request,"add.html")
+    return render(request,"add.html")
 #
 #
 
