@@ -19,29 +19,29 @@ user_id =None
 
 
 
-#def add(request):
-#    if request.method =="POST":
-#        name = request.POST.get("name")
-#        link = request.POST.get("link")
-#        image_link = request.POST.get("image_link")
-#        
-#
-#        data = investors(name=name,link=link,image_link=image_link)
-#        data.save()
-#
-#        try:
-#            object= investors.objects.get(name=name,link=link,image_link=image_link,payment="Payment_not_done")
-#            global user_id
-#            user_id=object.id
+def add(request):
+#   if request.method =="POST":
+#       name = request.POST.get("name")
+#       link = request.POST.get("link")
+#       image_link = request.POST.get("image_link")
+#       
+ #
+#       data = investors(name=name,link=link,image_link=image_link)
+#       data.save()
+ #
+#       try:
+#           object= investors.objects.get(name=name,link=link,image_link=image_link,payment="Payment_not_done")
+#           global user_id
+#           user_id=object.id
+#           
+#           param = {"id":id}
+#           return render(request,"add.html",param)
+#       except:
+#           response= "Already Exist Try Changing the details."
+#           param= {"id":response}
+#           return render(request,"add.html",param)
 #            
-#            param = {"id":id}
-#            return render(request,"add.html",param)
-#        except:
-#            response= "Already Exist Try Changing the details."
-#            param= {"id":response}
-#            return render(request,"add.html",param)
-#             
-    return render(request,"add.html")
+       return render(request,"add.html")
 #
 #
 
